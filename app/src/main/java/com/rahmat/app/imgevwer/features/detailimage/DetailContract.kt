@@ -9,11 +9,11 @@ interface DetailContract {
 
 
     interface View: BaseContract.View{
-
+        fun displaySlider(cat: HashMap<String, Int>)
     }
 
     interface Presenter: BaseContract.Presenter{
-
+        fun initSlider()
     }
 
 }

@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
     tools:context=".features.detailimage.DetailActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+</RelativeLayout>

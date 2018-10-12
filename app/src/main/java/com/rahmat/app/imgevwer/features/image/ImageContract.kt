@@ -1,5 +1,6 @@
 package com.rahmat.app.imgevwer.features.image
 
+import com.rahmat.app.imgevwer.entity.Image
 import com.rahmat.app.imgevwer.features.base.BaseContract
 
 /**
@@ -8,11 +9,11 @@ import com.rahmat.app.imgevwer.features.base.BaseContract
 interface ImageContract {
 
     interface View: BaseContract.View{
-
+        fun showImage(catList: List<Image>)
     }
 
     interface Presenter: BaseContract.Presenter{
-
+        fun initImage()
     }
 
 }

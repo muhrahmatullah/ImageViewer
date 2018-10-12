@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgContainer"
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_cat"/>
+            <TextView
+                android:id="@+id/tvCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgContainer"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="12dp"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                tools:text="Your lovely cat"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
