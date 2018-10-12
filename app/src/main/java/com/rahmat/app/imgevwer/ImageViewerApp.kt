@@ -27,6 +27,5 @@ class ImageViewerApp : Application(), HasActivityInjector {
                 .setDefaultFontPath("fonts/openSans.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build())
-
     }
 }

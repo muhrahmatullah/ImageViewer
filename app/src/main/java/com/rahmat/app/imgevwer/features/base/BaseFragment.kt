@@ -28,7 +28,6 @@ abstract class BaseFragment<P : BasePresenter<V>, V : BaseContract.View> : Fragm
         mPresenter.detachView()
         super.onDestroy()
     }
-
     override fun showLoading() {
     }
 
