@@ -2,6 +2,7 @@ package com.rahmat.app.imgevwer
 
 import android.app.Activity
 import android.app.Application
+import com.rahmat.app.imgevwer.di.injector.AppInjector
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
@@ -22,6 +23,8 @@ class ImageViewerApp : Application(), HasActivityInjector {
 
     override fun onCreate() {
         super.onCreate()
+
+        AppInjector.init(this)
 
         CalligraphyConfig.initDefault(CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/openSans.ttf")
